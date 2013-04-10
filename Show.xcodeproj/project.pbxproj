@@ -20,6 +20,7 @@
 		1F0467781714C85800276990 /* waterfall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F04676E1714C85800276990 /* waterfall.jpg */; };
 		1F04677F1714CCAE00276990 /* iPhoneIcon_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F04677D1714CCAE00276990 /* iPhoneIcon_Big.png */; };
 		1F0467801714CCAE00276990 /* iPhoneIcon_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F04677E1714CCAE00276990 /* iPhoneIcon_Small.png */; };
+		1F046784171506AA00276990 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F046783171506AA00276990 /* README.md */; };
 		1F7D1803170E08180057CB7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7D1802170E08180057CB7D /* UIKit.framework */; };
 		1F7D1805170E08180057CB7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7D1804170E08180057CB7D /* Foundation.framework */; };
 		1F7D1807170E08180057CB7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7D1806170E08180057CB7D /* CoreGraphics.framework */; };
@@ -56,6 +57,7 @@
 		1F04676E1714C85800276990 /* waterfall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = waterfall.jpg; sourceTree = "<group>"; };
 		1F04677D1714CCAE00276990 /* iPhoneIcon_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Big.png; path = Show/iPhoneIcon_Big.png; sourceTree = "<group>"; };
 		1F04677E1714CCAE00276990 /* iPhoneIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Small.png; path = Show/iPhoneIcon_Small.png; sourceTree = "<group>"; };
+		1F046783171506AA00276990 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1F7D17FF170E08180057CB7D /* Show.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Show.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7D1802170E08180057CB7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F7D1804170E08180057CB7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +137,7 @@
 		1F7D1808170E08180057CB7D /* Show */ = {
 			isa = PBXGroup;
 			children = (
+				1F046783171506AA00276990 /* README.md */,
 				1F7D1826170E1B690057CB7D /* MainView.mm */,
 				1F7D1822170E19D50057CB7D /* MyMath.h */,
 				1F7D1839170F98C40057CB7D /* CtrlSet.h */,
@@ -257,6 +260,7 @@
 				1F0467781714C85800276990 /* waterfall.jpg in Resources */,
 				1F04677F1714CCAE00276990 /* iPhoneIcon_Big.png in Resources */,
 				1F0467801714CCAE00276990 /* iPhoneIcon_Small.png in Resources */,
+				1F046784171506AA00276990 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

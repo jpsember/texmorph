@@ -191,8 +191,9 @@ void fitRectWithinRect(IRect a, IRect b, FlPoint2 &offset, float &scale) {
     setScaleFactor(sclAdjust);
     
     if (self.testFocus) {
-        TF.focus_.setTo(300,500,0);
-        setScaleFactor(.3 * sclAdjust);
+//        FlRect bnd = c([self bounds]);
+//        TF.focus_.setTo(bnd.x + bnd.width/2,bnd.y + bnd.height/2,0);
+        setScaleFactor(.6 * sclAdjust);
     }
     
 	prepareProjection();
@@ -283,7 +284,7 @@ void fitRectWithinRect(IRect a, IRect b, FlPoint2 &offset, float &scale) {
     
     IRect bnd = ci([self bounds]);
     
-    int slot = (pt.y / (bnd.width/3)) * 2 + (pt.x / (bnd.height/ 2));
+    int slot = (pt.y / (bnd.height/3)) * 2 + (pt.x / (bnd.width / 2));
     
     switch (slot) {
         case 0:
