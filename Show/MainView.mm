@@ -184,11 +184,15 @@ void fitRectWithinRect(IRect a, IRect b, FlPoint2 &offset, float &scale) {
         }
     
     TF.focus_.setTo(0,0,0);
-    setScaleFactor(1);
+    
+    float sclAdjust = 1;
+//    sclAdjust = self.paused || self.nextPaused? .95 : 1;
+    
+    setScaleFactor(sclAdjust);
     
     if (self.testFocus) {
         TF.focus_.setTo(300,500,0);
-        setScaleFactor(.3);
+        setScaleFactor(.3 * sclAdjust);
     }
     
 	prepareProjection();
@@ -277,7 +281,9 @@ void fitRectWithinRect(IRect a, IRect b, FlPoint2 &offset, float &scale) {
     IPoint2 pt;
     [self touchLoc: touches : nil : &pt];
     
-    int slot = (pt.y / (1024/3)) * 2 + (pt.x / (768 / 2));
+    IRect bnd = ci([self bounds]);
+    
+    int slot = (pt.y / (bnd.width/3)) * 2 + (pt.x / (bnd.height/ 2));
     
     switch (slot) {
         case 0:

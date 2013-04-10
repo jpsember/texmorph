@@ -269,7 +269,7 @@ void rndCtrlPerturb(PtsVec &v) {
 #define  B (1 - A)
 #define C (A*.3)
     
-#define NPRESETS 16
+#define ENDMARKER -999
     static float ss[] = {
         A-C,A+C,B-C,A+C,B-C,B+C,A-C,B+C, //
         A-C,A-C,B-C,A-C,B-C,B-C,A-C,B-C, //
@@ -290,6 +290,20 @@ void rndCtrlPerturb(PtsVec &v) {
         1,0,B,A,A,B,0,1, //
         B,A,B,B,A,B,A,A, //
         B,B,A,B,A,A,B,A, //
+        
+#undef C
+#define C -.03
+        A-C,A-C,B+C,A-C,B+C,B+C,A-C,B+C,
+#undef C
+#define C .03
+        A-C,A-C,B+C,A-C,B+C,B+C,A-C,B+C,
+        
+        A,A-C,B,A+C,B,B-C,A,B+C,
+        A,A+C,B,A-C,B,B+C,A,B-C,
+        A-C,A,B+C,A,B-C,B,A+C,B,
+        A+C,A,B-C,A,B+C,B,A-C,B,
+        
+        ENDMARKER
     };
 #undef A
 #undef B
@@ -306,7 +320,12 @@ void rndCtrlPerturb(PtsVec &v) {
     
     if (TEST || rand() % 100 > 30) {
         pr(" choosing preset...\n");
-        int s = (rand() % NPRESETS)*CPTS*2;
+        static int nPresets;
+        if (!nPresets) {
+            while (ss[nPresets * CPTS * 2] != ENDMARKER)
+                nPresets++;
+        }
+        int s = (rand() % nPresets)*CPTS*2;
         if (TEST)
             s = 0;
         
