@@ -1,6 +1,8 @@
 TexMorph
 ===========
 
+![Screen shot.](Show/screenshot.jpg)
+
 TexMorph is a simple IOS app that does a slideshow by simultaneously crossfading and deforming textured meshes.
 
 Given an image, the program chooses four 'control points' that are inset from each of the image's corners.
