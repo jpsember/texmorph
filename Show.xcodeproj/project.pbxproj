@@ -42,8 +42,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F04675F17122B8100276990 /* iPhoneIcon_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Big.png; path = ../iPhoneIcon_Big.png; sourceTree = "<group>"; };
-		1F04676117122BA600276990 /* iPhoneIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Small.png; path = ../iPhoneIcon_Small.png; sourceTree = "<group>"; };
 		1F0467631714C6BC00276990 /* cheetah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cheetah.jpg; sourceTree = "<group>"; };
 		1F0467651714C85500276990 /* dino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dino.jpg; sourceTree = "<group>"; };
 		1F0467661714C85500276990 /* diver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = diver.jpg; sourceTree = "<group>"; };
@@ -55,8 +53,8 @@
 		1F04676C1714C85700276990 /* santorini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santorini.jpg; sourceTree = "<group>"; };
 		1F04676D1714C85700276990 /* seawall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seawall.jpg; sourceTree = "<group>"; };
 		1F04676E1714C85800276990 /* waterfall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = waterfall.jpg; sourceTree = "<group>"; };
-		1F04677D1714CCAE00276990 /* iPhoneIcon_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Big.png; path = Show/iPhoneIcon_Big.png; sourceTree = "<group>"; };
-		1F04677E1714CCAE00276990 /* iPhoneIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Small.png; path = Show/iPhoneIcon_Small.png; sourceTree = "<group>"; };
+		1F04677D1714CCAE00276990 /* iPhoneIcon_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneIcon_Big.png; sourceTree = "<group>"; };
+		1F04677E1714CCAE00276990 /* iPhoneIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneIcon_Small.png; sourceTree = "<group>"; };
 		1F046783171506AA00276990 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1F7D17FF170E08180057CB7D /* Show.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Show.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7D1802170E08180057CB7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -106,8 +104,6 @@
 		1F7D17F6170E08180057CB7D = {
 			isa = PBXGroup;
 			children = (
-				1F04677D1714CCAE00276990 /* iPhoneIcon_Big.png */,
-				1F04677E1714CCAE00276990 /* iPhoneIcon_Small.png */,
 				1F7D1808170E08180057CB7D /* Show */,
 				1F7D1801170E08180057CB7D /* Frameworks */,
 				1F7D1800170E08180057CB7D /* Products */,
@@ -161,9 +157,9 @@
 		1F7D1809170E08180057CB7D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1F04676117122BA600276990 /* iPhoneIcon_Small.png */,
-				1F04675F17122B8100276990 /* iPhoneIcon_Big.png */,
 				1F7D182F170E30890057CB7D /* Resources */,
+				1F04677D1714CCAE00276990 /* iPhoneIcon_Big.png */,
+				1F04677E1714CCAE00276990 /* iPhoneIcon_Small.png */,
 				1F7D180A170E08180057CB7D /* Show-Info.plist */,
 				1F7D180B170E08180057CB7D /* InfoPlist.strings */,
 				1F7D1810170E08180057CB7D /* Show-Prefix.pch */,
